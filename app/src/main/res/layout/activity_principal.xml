@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaria"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="353dp"
+        android:layout_height="585dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_radius_principal"
+        />
+
+    <TextView
+        android:id="@+id/TESTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="315dp"
+        android:fontFamily="@font/lily_script_one"
+        android:text="Agendamento"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+
+    <Button
+        android:id="@+id/BotaoUsuario"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/usuario"
+        app:backgroundTint="@null"
+        />
+
+
+    <FrameLayout
+        android:layout_width="353dp"
+        android:layout_height="585dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:elevation="15dp"
+        >
+
+        <!--Primeira Linha-->
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoExtracao"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="40dp"
+            android:text=""
+            android:background="@drawable/extracao"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="35dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Extração" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoConsulta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="150dp"
+            android:text=""
+            android:background="@drawable/consulta"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="145dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Consulta" />
+
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoAparelho"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="260dp"
+            android:text=""
+            android:background="@drawable/aparelho"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="255dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Aparelho" />
+
+        <!--Segunda Linha-->
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoProtese"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="40dp"
+            android:text=""
+            android:background="@drawable/protese"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="259dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Prótese" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoLimpeza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="150dp"
+            android:text=""
+            android:background="@drawable/limpeza"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="259dp"
+            android:layout_marginLeft="147dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Limpeza" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoCanal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="260dp"
+            android:text=""
+            android:background="@drawable/canal"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="259dp"
+            android:layout_marginLeft="265dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Canal" />
+
+        <!--Terceira Linha-->
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoFacetas"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="325dp"
+            android:layout_marginLeft="40dp"
+            android:text=""
+            android:background="@drawable/facetas"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Facetas" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoTartaro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="325dp"
+            android:layout_marginLeft="150dp"
+            android:text=""
+            android:background="@drawable/tartaro"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="122dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Rem. de Tartaro" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoClareamento"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="325dp"
+            android:layout_marginLeft="260dp"
+            android:text=""
+            android:background="@drawable/clareamento"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="243dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Clareamento" />
+
+        <!--Quarta Linha-->
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoRestauracao"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="47dp"
+            android:text=""
+            android:background="@drawable/restauracao"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Restauração" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoFluor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="150dp"
+            android:text=""
+            android:background="@drawable/fluor"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:layout_marginLeft="132dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Apl. de Flúor" />
+
+        <View
+            android:layout_width="92dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/border_radius_opcoes"
+            />
+        <Button
+            android:id="@+id/BotaoPeriodontia"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="260dp"
+            android:text=""
+            android:background="@drawable/periodontia"
+            app:backgroundTint="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:layout_marginLeft="243dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/mirza_bold"
+            android:textColor="@color/black"
+            android:text="Periodontia" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

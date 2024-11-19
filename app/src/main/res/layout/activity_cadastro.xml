@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secundaria"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="333dp"
+        android:layout_height="590dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_radius"
+        android:radius="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="590dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:elevation="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lily_script_one"
+            android:textColor="@color/black"
+            android:text="Cadastre-se"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/CadastroNome"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:hint="Nome:"
+            android:background="@drawable/border_radius_box"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/CadastroEmail"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:hint="Email:"
+            android:background="@drawable/border_radius_box"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/CadastroCPF"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:hint="CPF:"
+            android:background="@drawable/border_radius_box"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/CadastroDtNasc"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:hint="Data de Nascimento:"
+            android:background="@drawable/border_radius_box"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/CadastroSenha"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:hint="Senha:"
+            android:background="@drawable/border_radius_box"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/SalvarBotaoCadastro"
+            android:layout_width="149dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="25dp"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:text="Salvar"
+            app:backgroundTint="@color/cinza" />
+
+    </LinearLayout>
+
+</FrameLayout>

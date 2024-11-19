@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secundaria"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="321dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_radius"
+        android:radius="50dp"/>
+
+    <LinearLayout
+        android:layout_width="321dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:elevation="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lily_script_one"
+            android:textColor="@color/black"
+            android:text="Bem vindo"
+            android:textSize="35sp"/>
+
+
+        <EditText
+            android:id="@+id/LoginEmail"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_radius_box"
+            android:ems="10"
+            android:fontFamily="@font/kumbh_sans"
+            android:hint="Email:"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/LoginSenha"
+            android:layout_width="263dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_radius_box"
+            android:ems="10"
+            android:fontFamily="@font/kumbh_sans"
+            android:hint="Senha:"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/BotaoLogin"
+            android:layout_width="149dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/kumbh_sans"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/cinza" />
+
+        <Button
+            android:id="@+id/Cadastre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kumbh_sans"
+            android:text="Cadastre-se"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF" />
+
+    </LinearLayout>
+</FrameLayout>

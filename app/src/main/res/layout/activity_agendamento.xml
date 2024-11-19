@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaria"
+    tools:context=".Agendamento">
+
+    <Button
+        android:id="@+id/BotaoVoltarAgendamento"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:background="@drawable/voltar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lily_script_one"
+        android:text="Realizar Agendamento:"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="27sp"
+        android:textColor="@color/black"/>
+
+    <DatePicker
+        android:id="@+id/Calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/border_radius_box" />
+
+    <Spinner
+        android:id="@+id/Horarios"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:background="@drawable/style_spinner"
+        android:layout_gravity="center"
+        android:layout_marginTop="227dp"
+        android:textSize="23dp"
+
+        />
+
+    <Button
+        android:id="@+id/BotaoSalvarAgendamento"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="320dp"
+        android:padding="10dp"
+        android:textSize="17dp"
+        android:layout_gravity="center"
+        android:text="Confirmar"
+        android:background="@drawable/botao_confirmar_agendamento"
+        app:backgroundTint="@null"
+        />
+
+
+</FrameLayout>

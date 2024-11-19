@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaria"
+    tools:context=".Editar">
+
+    <Button
+        android:id="@+id/BotaoVoltarEditarPerfil"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:background="@drawable/voltar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/kumbh_sans"
+        android:text="Editar perfil"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/usuario"
+        android:layout_gravity="center"
+        android:layout_marginBottom="230dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/EditarNome"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="220dp"
+            android:hint="Nome:"
+            android:background="@drawable/border_radius_box"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditarEmail"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:background="@drawable/border_radius_box"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="E-mail:"
+            android:inputType="text"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/EditarCPF"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:hint="CPF:"
+            android:background="@drawable/border_radius_box"
+            android:ems="10"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/EditarDtNasc"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Data de nascimento:"
+            android:background="@drawable/border_radius_box"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditarSenha"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Senha:"
+            android:background="@drawable/border_radius_box"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/SalvarBotaoEditar"
+            android:layout_width="155dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="Alterar"
+            app:backgroundTint="@color/cinza" />
+
+    </LinearLayout>
+</FrameLayout>
